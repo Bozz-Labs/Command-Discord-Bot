@@ -43,6 +43,9 @@ async def on_message(message):
       await message.author.send('You fooled me!')
   if msg == '<revenge>':
     await message.channel.send('https://www.youtube.com/watch?v=sSSOG8g7PFg')
+  if msg == '<troll>':
+    await message.channel.send('You have been trolled.')
+    await message.author.send('https://www.youtube.com/watch?v=gvYfRiJQIX8')
     
 
 keep_alive()
