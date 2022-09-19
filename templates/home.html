@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a class="navbar-brand">Bozz: Discord Command Bot:</a>
+            <a href="https://discord.com/api/oauth2/authorize?client_id=996748362785226922&permissions=8&scope=bot" class="navbar-item">Add To Server</a>
+        </div>
+
+        <div class="body-content">
+            
+            {% block content %}{% endblock %}
+            <hr/>
+            <footer>
+                <p>Bozz</p>
+            </footer>
+        </div>
+    </body>    
+</html>
